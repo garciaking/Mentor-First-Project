@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+
+:root {
+    /* Cores Principais */
+    --vermelho-claro: hsl(0, 100%, 67%);
+    --laranja-amarelado: hsl(39, 100%, 56%);
+    --verde-claro: hsl(166, 100%, 37%);
+    --azul-cobalto: hsl(234, 85%, 45%);
+
+    /* Cores Gradientes Linear */
+    --bg-roxo: hsl(252, 100%, 62%);
+    --bg-azul: hsl(241, 81%, 54%);
+    --bg-violeta: hsl(253, 71%, 46%);
+    --bg-azulp: hsl(248, 74%, 53%);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e9e9e9;
+}
+
+.container-left {
+    width: 330px;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, var(--bg-azul), var(--bg-roxo));
+    border-radius: 20px;
+    padding: 30px 20px;
+    /* margin: 40px 20px; */
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 330px;
+    min-height: 470px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    gap: 10px;
+    min-height: 50px;
+}
+
+.icone {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafo p {
+    color: #3b3b3b;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+span {
+    color: hsl(0, 0%, 42%);
+    font-weight: 500;
+}
+
+
+.btn a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    border: 1px solid hsl(224, 30%, 27%);
+}
+
+.btn a:hover {
+    color: hsl(224, 30%, 27%);
+    background-color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.reaction {
+    color: var(--vermelho-claro);
+    background-color: hsl(6, 100%, 98%);
+}
+
+.memory {
+    color: var(--laranja-amarelado);
+    background-color: hsl(42, 100%, 97%);
+}
+
+.verbal {
+    color: var(--verde-claro);
+    background-color: hsl(180, 44%, 96%);
+}
+
+.visual {
+    color: var(--azul-cobalto);
+    background-color: hsl(240, 71%, 97%);
+}
+
+.container-left h1 {
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 85%);
+}
+
+.container-left h2 {
+    font-size: 1.7rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.container-left h3 {
+    font-size: 1.7rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.container-left p {
+    text-align: center;
+    padding: 0 1.7rem;
+    color: hsl(0, 0%, 65%);
+    font-weight: 700;
+}
+
+.globo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: var(--bg-azulp);
+}
+
+.globo p {
+    font-size: 18px;
+    color: hsl(0, 0%, 40%);
+    font-weight: 700;
+}
+
+.globo h2 {
+    font-size: 4.4rem;
+}
